@@ -13,7 +13,7 @@ const Quiz = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:4000/allproducts')
+        fetch('https://pathwayforge-master.onrender.com/allproducts')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch questions');
